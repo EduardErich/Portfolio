@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #282A36;
+}
+
+/* Defining a menu navbar */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 10% 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.296) 0px 40px 43px -20px;   
+}
+
+.logo {
+    color: #ededed;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    color: #ededed;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 0 20px 20px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #39f077;
+    border-bottom: 4px solid 
+}
