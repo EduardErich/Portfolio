@@ -10,19 +10,49 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
+
     <body>
        <header class="header">
-        <a href="#" class="logo">Erich.</a>
+        <a href="#" class="logo">Erich <span class="dot">.//</span></a>
         <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="pages/about.html">About</a>
-            <a href="pages/projects.html">Projects</a>
-            <a href="pages/contact.html">Contact</a>
+            <a href="index.html" class="active menu-item">Home</a>
+            <a href="pages/about.html" class="menu-item">About</a>
+            <a href="pages/about.html" class="menu-item">My experience</a>
+            <a href="pages/projects.html" class="menu-item">Projects</a>
+            <a href="pages/contact.html" class="menu-item">Contact</a>
         </nav>
-        </ul>
+        <button class="burger-menu"><i class='bx bx-menu'></i></button>
        </header>
-        
-        <script src="" async defer></script>
+
+        <section class="main">
+            <div class="main-content">
+                <h1 class="hello">Hello there!</h1>
+                <h3 class="greeting">Nice to meet you, I'm Erich</h3>
+                <p class="presentation">I'm a budding systems analysis and development student with a passion for data analysis, programming, and AI. Currently honing my skills in SQL, Python, and web development, I'm dedicated to turning complex problems into elegant solutions. Welcome to my portfolio!</p>
+                <div class="button-box">
+                    <a href="pages/about.html" class="about">Learn more about me</a>
+                    <a href="pages/projects.html" class="projects">See my projects so far</a>
+                </div>
+            </div>
+        </section>
+        <section class="middle">
+            <div>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+            </div>
+        </section>
+        <footer class="footer">
+           <div class="bottom-icon">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-linkedin'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                <a href=""><i class='bx bxl-reddit'></i></a>
+           </div>
+           <div class="bottom-text">
+            <p>Erich Eduardo @ 2024</p>
+           </div>
+        </footer>
+        <script src="scripts/script.js" async defer></script>
     </body>
 </html>

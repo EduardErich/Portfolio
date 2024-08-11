@@ -3,26 +3,40 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Personal portfolio | About</title>
+        <title>Personal portfolio | Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/style/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-       <header class="header">
-        <a href="#" class="logo">Erich.</a>
-        <nav class="navbar">
-            <a href="../index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        </ul>
-       </header>
-        
-        <script src="" async defer></script>
+        <header class="header">
+            <a href="#" class="logo">Erich <span class="dot">.</span></a>
+            <nav class="navbar">
+                <a href="../index.html" class="menu-item">Home</a>
+                <a href="about.html" class="menu-item">About</a>
+                <a href="experience.html" class="menu-item">My experience</a>
+                <a href="projects.html" class="active menu-item">Projects</a>
+                <a href="contact.html" class="menu-item">Contact</a>
+            </nav>
+            <button class="burger-menu"><i class='bx bx-menu'></i></button>
+           </header>
+
+
+        <footer class="footer">
+           <div class="bottom-icon">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-linkedin'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                <a href=""><i class='bx bxl-reddit'></i></a>
+           </div>
+           <div class="bottom-text">
+            <p>Erich Eduardo @ 2024</p>
+           </div>
+        </footer>
+        <script src="../scripts/script.js" async defer></script>
     </body>
 </html>
