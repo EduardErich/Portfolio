@@ -75,7 +75,6 @@ input:focus {
 .main {
     display: flex;
     align-items: center;                                                                                 ;
-    height: 65vh;
     padding: 10% 10%;
     color: #ededed;    
 }
@@ -292,9 +291,13 @@ input:focus {
 .image {
     display: flex;
     justify-content: center;
+    border: 5px solid #39f077;
+    border-radius: 70%;
+    padding: 15px;
+    
 }
 .image img {
-    width: 40%;
+    width: 34em;
     border: 5px solid #39f077;
     border-radius: 50%;
 }
@@ -507,5 +510,34 @@ input:focus {
 
     .submit:hover {
         background-color: #3aba64e4;
+    }
+
+    /* Defining about */
+    .main-about {        
+        padding: 0;
+    }
+    
+    .image {
+        margin: 10em 10% 1em;
+        padding: 0.4em; 
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .presentation {
+        align-content: center;
+        padding-bottom: 3em;
+        gap: 1em;
+    }
+
+    .presentation h2 {
+    margin-left: 10%;
+    }
+
+    .main-about a {
+    text-align: center;
+    padding: 1em 3em;
     }
 }
