@@ -11,6 +11,7 @@ body {
 
 a {
     text-decoration: none;
+    transition: all 0.4s;
 }
 
 input:focus {
@@ -73,9 +74,9 @@ input:focus {
 /* Defining the main presentation */
 .main {
     display: flex;
-    align-items: center;
+    align-items: center;                                                                                 ;
     height: 65vh;
-    padding: 0 10%;
+    padding: 10% 10%;
     color: #ededed;    
 }
 
@@ -111,6 +112,13 @@ input:focus {
     border-radius: 7px;
     padding: 15px;
     letter-spacing: 0.85px;
+}
+
+.button-box a:nth-child(1) {
+    color: #282A36;
+    background-color: #39f077;
+    border: 2px solid #39f077;
+    font-weight: 500;
 }
 
 .button-box a:hover {
@@ -257,6 +265,66 @@ input:focus {
 
 .submit:hover {
     background-color: #21a14c;
+}
+
+/*Defining about section */
+.main-about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4.4em;
+    background-color: #2f3241;
+    padding-bottom: 1em;                                                                               
+    padding: 5% 10%;
+    color: #ededed;
+}
+
+.heading {
+    display: flex;
+    height: auto;
+    margin-bottom: 2em;
+    padding: 0;
+}
+.about{
+    padding: 0;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+.image img {
+    width: 40%;
+    border: 5px solid #39f077;
+    border-radius: 50%;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.presentation h2 {
+    margin-top: 3em;
+    color: #39f077;
+}
+.presentation p {
+    color: #ededed;
+    padding: 2% 10%;
+}
+
+.main-about a {
+    background-color:#39f077;
+    border: 2px solid #39f077;
+    color:#282A36;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 3em;
+}
+
+.main-about a:hover {
+    background-color: #70C247;
+    border: 2px solid #70C247;
 }
 
 /*  Small devices*/
