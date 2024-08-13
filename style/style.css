@@ -76,7 +76,8 @@ input:focus {
     display: flex;
     align-items: center;                                                                                 ;
     padding: 10% 10%;
-    color: #ededed;    
+    color: #ededed;
+    height: auto;
 }
 
 .main h1 {
@@ -100,16 +101,19 @@ input:focus {
 .button-box {
     display: flex;
     justify-content: space-between;
-    max-width: 500px;
+    max-width: 500px;    
+    gap: 2em;
+    padding-top: 1em;
 }
 
 .button-box a {
     text-decoration: none;
+    text-align: center;
     color: #ededed;
     background-color: transparent;
     border: 2px solid #ededed;
     border-radius: 7px;
-    padding: 15px;
+    padding: 4%;
     letter-spacing: 0.85px;
 }
 
@@ -117,22 +121,60 @@ input:focus {
     color: #282A36;
     background-color: #39f077;
     border: 2px solid #39f077;
-    font-weight: 500;
 }
 
 .button-box a:hover {
-    color: #282A36;
-    background-color: #39f077;
     border: 2px solid #39f077;
-    font-weight: 700;
+    background-color: #39f077;
+    color:#282A36;   
 }
 
-/* middle */
-.middle {
+.button-box a:nth-child(1):hover {   
+    background-color: #21a14c;
+    border: 2px solid #21a14c;
+    color: #ededed;
+}
+
+.call-section{
     background-color: #ededed;
-    height: 50vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 5em;
 }
 
+.text-box {
+    color: #ededed;
+}
+
+.box {
+    background: rgb(57,240,119);
+    background: linear-gradient(203deg, rgba(57,240,119,1) 0%, rgba(79,130,112,0.9977124638918067) 100%); 
+    border-radius: 15px;
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.box a {
+    border: 2px solid #282A36;
+    border-radius: 10px;
+    color: #282A36;
+    font-weight: 500;   
+    padding: 1em;
+    
+}
+
+.box a:hover {
+    border: 2px solid #ededed;
+    background-color: #ededed;
+    color:  rgba(9,121,90,1);
+    font-weight: 500;
+}
 /* Defining footer */
 .footer {
     background-color: transparent;
@@ -291,15 +333,13 @@ input:focus {
 .image {
     display: flex;
     justify-content: center;
-    border: 5px solid #39f077;
-    border-radius: 70%;
-    padding: 15px;
     
 }
 .image img {
     width: 34em;
     border: 5px solid #39f077;
     border-radius: 50%;
+    box-shadow: 0 20px 50px 15px limegreen;
 }
 
 .presentation {
@@ -342,6 +382,9 @@ input:focus {
   margin-top: 5%;
 }
 
+.design-section .heading {
+    margin: 5% 0;
+}
 .timeline {
   width: 80%;
   height: auto;
@@ -402,6 +445,66 @@ input:focus {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+}
+
+/* Defining my projects*/
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #282A36;
+    padding: 100px 0;
+    margin-top: 5%;
+}
+
+.card-container {    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #2f3241;
+    width: 25%;
+    height: 54vh;
+    border-radius: 2em;
+    color: #ededed;
+    gap: 1em;
+    box-shadow: #39f077 -5px 5px, #39f0766d -10px 10px, #39f0762b -15px 15px;
+    transition: 0.4s;
+    font-size: 14px;
+    margin: 2em;
+}
+
+.project-card:hover {
+    height: 56vh;
+    width: 27%;
+    transition: 0.4s;
+    font-size: 16px;
+    gap:0.5em;
+}
+
+.project-card h3{
+    color: #39f077;
+    font-size: 20px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 2em 2em 0 0;
+}
+
+.text-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 2em;
 }
 
 /*  Small devices*/
@@ -494,6 +597,13 @@ input:focus {
         font-weight: bold;
     }
 
+    .call-section {
+        padding: 5%;
+    }
+    .box {
+        padding: 5%;
+        flex-direction: column;
+    }
     /* Defining footer */
     .footer {        
         margin-bottom: 5px;
@@ -505,6 +615,18 @@ input:focus {
         align-content: center;
     }
 
+    .bottom-icon {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    .bottom-icon a{
+        margin-bottom: 0.8em;
+        padding: 0;
+        font-size: 24px;
+    }
     /*Defining Form*/
     .main.contact {
         display: flex;
@@ -614,5 +736,31 @@ input:focus {
     .main-about a {
     text-align: center;
     padding: 1em 3em;
+    }
+
+    /* Project section*/
+    .project-section .heading {
+        margin: 0 0 3%;
+    }
+
+    .card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        margin-top: 20vh;
+        gap: 5em;
+    }
+
+    .project-card {
+        width: 75%;        
+        height: auto;
+        margin: 0.5em;
+    }
+
+    .project-card:hover {
+        height: auto;
+        width: 90%;
     }
 }
